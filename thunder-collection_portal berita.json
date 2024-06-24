@@ -1,0 +1,161 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "portal berita",
+    "collectionId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+    "dateExported": "2024-06-24T14:19:23.587Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "37925a51-e1ce-407a-889e-552a234d75cd",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "getAllBerita",
+            "url": "http://localhost:3000/berita",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-24T13:37:18.159Z",
+            "modified": "2024-06-24T13:37:26.760Z",
+            "headers": []
+        },
+        {
+            "_id": "064bc1fc-34e3-4a4b-b00e-2d3658b14210",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "getBeritabyId",
+            "url": "http://localhost:3000/berita/4",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-24T13:37:46.588Z",
+            "modified": "2024-06-24T14:03:40.520Z",
+            "headers": []
+        },
+        {
+            "_id": "86711da7-038d-4ef4-bbff-8257ff138584",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "addBerita",
+            "url": "http://localhost:3000/berita/add",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-24T13:38:47.766Z",
+            "modified": "2024-06-24T14:03:26.322Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"judul_berita\": \"Elon Musk Resmi Luncurkan Starlink Versi Mini,Berikut Keunggulan dan Harganya\", \r\n  \"author\":\"TRIBUNNEWSWIKI.COM\",\r\n  \"isi_berita\":\"SpaceX resmi memperkenalkan produk terbarunya, yakni Starlink Mini.\",\r\n  \"id_kategori\":\"3\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f56c03bf-eae0-4c37-9e0d-2c35062309aa",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "editBerita",
+            "url": "http://localhost:3000/berita/edit/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-24T13:39:40.076Z",
+            "modified": "2024-06-24T13:42:38.384Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"judul_berita\": \"berita ke-3\", \r\n  \"author\":\"Testauthor\",\r\n  \"isi_berita\":\"testtttt\", \r\n  \"id_kategori\":\"1\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a270bdba-611b-4dec-be75-9883d735bc2d",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "deleteBerita",
+            "url": "http://localhost:3000/berita/delete/3",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-24T13:40:35.062Z",
+            "modified": "2024-06-24T14:04:00.551Z",
+            "headers": []
+        },
+        {
+            "_id": "39994e2e-b731-42e4-ae99-99693503b3a0",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "registerUser",
+            "url": "http://localhost:3000/register/user",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-24T13:43:39.205Z",
+            "modified": "2024-06-24T13:44:33.639Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"username\": \"a\",\r\n  \"email\": \"a@gmail.com\",\r\n  \"password\": \"a123\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8d41721c-30e8-47fe-b823-dd975bea828a",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "loginUser",
+            "url": "http://localhost:3000/login/user",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-06-24T13:44:45.223Z",
+            "modified": "2024-06-24T13:45:17.200Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\": \"a@gmail.com\",\r\n  \"password\": \"a123\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e774b5a9-e242-4936-92cc-6baa0a5688b6",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "registerAdmin",
+            "url": "http://localhost:3000/registerAdmin/admin",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-06-24T13:45:28.480Z",
+            "modified": "2024-06-24T13:56:55.140Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"username\": \"bagas\",\r\n  \"email\": \"bagas@gmail.com\",\r\n  \"password\": \"password\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f8e892e1-f8d7-42b4-b53a-06720871de63",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "loginAdmin",
+            "url": "http://localhost:3000/loginAdmin/admin",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-06-24T13:57:15.152Z",
+            "modified": "2024-06-24T13:57:41.511Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\": \"bagas@gmail.com\",\r\n  \"password\": \"password\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5bc152e4-29d7-4927-b220-9312ad4f2d46",
+            "colId": "47be4565-abb8-4c5d-aaff-10739ed416e4",
+            "containerId": "",
+            "name": "profileUser",
+            "url": "http://localhost:3000/profile",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-06-24T13:58:48.365Z",
+            "modified": "2024-06-24T13:59:26.230Z",
+            "headers": []
+        }
+    ],
+    "ref": "aOhRsIxTxnCeOGNASoTVrN_IUCy20ZDanhUOV5qdB_OSW1gaKt1KnfMzN0OeJo39HAf6UPAXeSwTY01t1jBsXg"
+}
